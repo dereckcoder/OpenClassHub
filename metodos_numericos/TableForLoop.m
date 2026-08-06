@@ -1,4 +1,5 @@
 #num = input("Digite o numero: ");
+
 clc;
 
 for num = 0:10

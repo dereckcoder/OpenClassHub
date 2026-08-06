@@ -1,69 +1,104 @@
-# 🚀 Comunidade OpenClassHub
+# 🚀 OpenClassHub
+
 <div align="center">
-  <img src="https://media.gettyimages.com/id/159835744/pt/foto/henry-thomas-riding-with-et-in-his-bike-in-a-scene-from-the-film-e-t-the-extra-terrestrial-1982.jpg?s=2048x2048&w=gi&k=20&c=btxiFVsH6Jr4MF2Ft4XXUYQp6URr1rrQSHZF9pxOjBs=" alt="Texto Alternativo" width="450" alt=13>
+  <img src="https://media.gettyimages.com/id/159835744/pt/foto/henry-thomas-riding-with-et-in-his-bike-in-a-scene-from-the-film-e-t-the-extra-terrestrial-1982.jpg?s=2048x2048&w=gi&k=20&c=btxiFVsH6Jr4MF2Ft4XXUYQp6URr1rrQSHZF9pxOjBs=">
+
+
+# 💻 Comunidade de Programação
+
+Aprenda, pratique e evolua junto com outros estudantes.
+
 </div>
 
-#
-
-# Bem-vindo(a) à comunidade!
-
-Este espaço foi criado para reunir estudantes
-interessados em aprender programar 
-
-## 🎯 Objetivo
-
-O objetivo desta comunidade é:
-
-- Compartilhar exercícios das aulas;
-- Praticar;
-- Aprender;
-- Tirar dúvidas com outros membros;
-- Desenvolver projetos colaborativos;
 ---
-# 📚 Conteúdo
 
-Aqui você encontrará:
+## 📖 Sobre
 
-- Exercícios resolvidos das aulas;
-- lição de casa;
-- Materiais complementares.
+O **OpenClassHub** é uma comunidade pública criada para reunir estudantes interessados em programação.
 
-# 📂 Organização
+O objetivo é compartilhar conhecimento, resolver exercícios, trocar experiências e desenvolver projetos colaborativos.
 
+Aqui você encontrará um ambiente para aprender na prática e evoluir junto com a comunidade.
+
+---
+
+## 🎯 Objetivos
+
+- 📚 Compartilhar exercícios das aulas
+- 💡 lição de casa
+- 🤝 Ajudar outros estudantes
+- 🚀 Desenvolver projetos colaborativos
+
+---
+
+## 📂 Estrutura do Repositório
+
+```text
+📦 OpenClassHub
+│
+├── 📁 metodos_numericos/module...
+├── 📁 Programacao_estrutura/module...
+│
+└── README.md
 ```
-📦 Materiais
 
-📦 Exemplos
-
-📦 lição de casa
-
-📦 Projetos
-
-```
----
-
-# 🤝 Como contribuir
-
-Você pode contribuir:
-
-- Respondendo dúvidas.
-- Corrigindo exercícios.
-- Compartilhando soluções.
-- Sugerindo melhorias.
-- Criando novos desafios.
+Cada pasta contém os materiais organizados por disciplina ou módulo.
 
 ---
 
-# ⭐ Apoie o projeto
+## 📚 Conteúdo
 
-Se este material foi útil para você:
+Você encontrará:
 
-- Deixe uma ⭐ no repositório.
-- Compartilhe com outros estudantes.
-- Convide amigos para participar da comunidade.
+- ✅ Exercícios resolvidos
+- 📖 Materiais de apoio
+- 💻 Exemplos de código
+- 🚀 Projetos desenvolvidos durante as aulas
+
+    *(A lista será atualizada conforme o adamento das aulas.)*
+---
+
+## 🤝 Como contribuir
+
+Toda contribuição é bem-vinda!
+
+Você pode:
+
+- Corrigir exercícios
+- Compartilhar soluções
+- Melhorar códigos existentes
+- Abrir uma Issue
+- Enviar um Pull Request
+- Sugerir novos desafios
 
 ---
 
-## Bons estudos! 🚀
+## 📌 Regras da Comunidade
 
-> "A melhor forma de aprender programação é programando todos os dias." 
+- Respeite todos os membros.
+- Compartilhe conhecimento.
+- Evite publicar respostas sem explicação.
+- Mantenha uma linguagem respeitosa.
+- Ajude quem está começando.
+
+---
+
+## ⭐ Apoie o projeto
+
+Se este repositório foi útil para você:
+
+⭐ Deixe uma estrela no GitHub.
+
+📢 Compartilhe com outros estudantes.
+
+👥 Convide seus colegas para participar.
+
+---
+
+## 🚀 Bons estudos!
+
+> **"A melhor maneira de aprender programação é escrevendo código todos os dias."**
+
+**Aprender • Compartilhar • Evoluir**
+
+</div>
