@@ -8,8 +8,6 @@
 
 *Aprenda, pratique e evolua junto com outros estudantes.*
 
----
-
 ## 📖 Sobre
 
 O **OpenClassHub** é uma comunidade pública criada para reunir estudantes interessados em programação.
