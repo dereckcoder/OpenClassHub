@@ -16,16 +16,12 @@ O objetivo é compartilhar conhecimento, resolver exercícios, trocar experiênc
 
 Aqui você encontrará um ambiente para aprender na prática e evoluir junto com a comunidade.
 
----
-
 ## 🎯 Objetivos
 
 - 📚 Compartilhar exercícios das aulas
 - 💡 lição de casa
 - 🤝 Ajudar outros estudantes
 - 🚀 Desenvolver projetos colaborativos
-
----
 
 ## 📂 Estrutura do Repositório
 
@@ -40,8 +36,6 @@ Aqui você encontrará um ambiente para aprender na prática e evoluir junto com
 
 Cada pasta contém os materiais organizados por disciplina ou módulo.
 
----
-
 ## 📚 Conteúdo
 
 Você encontrará:
@@ -52,7 +46,6 @@ Você encontrará:
 - 🚀 Projetos desenvolvidos durante as aulas
 
     *(A lista será atualizada conforme o adamento das aulas.)*
----
 
 ## 🤝 Como contribuir
 
@@ -67,8 +60,6 @@ Você pode:
 - Enviar um Pull Request
 - Sugerir novos desafios
 
----
-
 ## 📌 Regras da Comunidade
 
 - Respeite todos os membros.
@@ -76,8 +67,6 @@ Você pode:
 - Evite publicar respostas sem explicação.
 - Mantenha uma linguagem respeitosa.
 - Ajude quem está começando.
-
----
 
 ## ⭐ Apoie o projeto
 
@@ -88,8 +77,6 @@ Se este repositório foi útil para você:
 📢 Compartilhe com outros estudantes.
 
 👥 Convide seus colegas para participar.
-
----
 
 ## 🚀 Bons estudos!
 
