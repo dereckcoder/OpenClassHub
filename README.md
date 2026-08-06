@@ -1,14 +1,12 @@
 # 🚀 OpenClassHub
 
 <div align="center">
-  <img src="https://media.gettyimages.com/id/159835744/pt/foto/henry-thomas-riding-with-et-in-his-bike-in-a-scene-from-the-film-e-t-the-extra-terrestrial-1982.jpg?s=2048x2048&w=gi&k=20&c=btxiFVsH6Jr4MF2Ft4XXUYQp6URr1rrQSHZF9pxOjBs=">
-
+  <img src="https://media.gettyimages.com/id/159835744/pt/foto/henry-thomas-riding-with-et-in-his-bike-in-a-scene-from-the-film-e-t-the-extra-terrestrial-1982.jpg?s=2048x2048&w=gi&k=20&c=btxiFVsH6Jr4MF2Ft4XXUYQp6URr1rrQSHZF9pxOjBs=" alt="Cena do filme E.T. O Extraterrestre" width="590">
+</div>
 
 # 💻 Comunidade de Programação
 
-Aprenda, pratique e evolua junto com outros estudantes.
-
-</div>
+*Aprenda, pratique e evolua junto com outros estudantes.*
 
 ---
 
