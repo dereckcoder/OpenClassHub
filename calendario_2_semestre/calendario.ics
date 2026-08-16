@@ -1,0 +1,738 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OpenClassHub//Calendario 2 Semestre 2026//PT-BR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Estudos - 2º semestre 2026
+X-WR-TIMEZONE:America/Sao_Paulo
+X-WR-CALDESC:Aulas de 27 de julho a 12 de dezembro de 2026
+BEGIN:VTIMEZONE
+TZID:America/Sao_Paulo
+X-LIC-LOCATION:America/Sao_Paulo
+BEGIN:STANDARD
+TZOFFSETFROM:-0300
+TZOFFSETTO:-0300
+TZNAME:-03
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:aorc-seg-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260727T190000
+DTEND;TZID=America/Sao_Paulo:20260727T204000
+RRULE:FREQ=WEEKLY;BYDAY=MO;UNTIL=20261212T025959Z
+EXDATE;TZID=America/Sao_Paulo:20260907T190000,20261012T190000,20261102T190000
+SUMMARY:Arquitetura e Organização de Computadores [LAB 10 - Bloco A]
+LOCATION:LAB 10 - Bloco A
+DESCRIPTION:Professor: Sergio Luiz Marques Filho
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A aula começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cisd-seg-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260727T210000
+DTEND;TZID=America/Sao_Paulo:20260727T224000
+RRULE:FREQ=WEEKLY;BYDAY=MO;UNTIL=20261212T025959Z
+EXDATE;TZID=America/Sao_Paulo:20260907T210000,20261012T210000,20261102T210000
+SUMMARY:Circuitos e Sistemas Digitais [LAB 11 - Bloco A]
+LOCATION:LAB 11 - Bloco A
+DESCRIPTION:Professor: Juliano de Pellegrin
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A aula começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:poea-ter-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260728T190000
+DTEND;TZID=America/Sao_Paulo:20260728T204000
+RRULE:FREQ=WEEKLY;BYDAY=TU;UNTIL=20261212T025959Z
+EXDATE;TZID=America/Sao_Paulo:20260908T190000,20260929T190000,20261013T190000,20261117T190000,20261201T190000,20261208T190000
+SUMMARY:Programação Estruturada [LAB 11 - Bloco A]
+LOCATION:LAB 11 - Bloco A
+DESCRIPTION:Professor: Luiz Adolpho Baroni
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A aula começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:menc-ter-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260728T210000
+DTEND;TZID=America/Sao_Paulo:20260728T224000
+RRULE:FREQ=WEEKLY;BYDAY=TU;UNTIL=20261212T025959Z
+EXDATE;TZID=America/Sao_Paulo:20260908T210000,20261013T210000
+SUMMARY:Métodos Numéricos Computacionais [LAB 01 - Bloco A]
+LOCATION:LAB 01 - Bloco A
+DESCRIPTION:Professor: Sergio Luiz Marques Filho
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A aula começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:menc-qua-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260729T190000
+DTEND;TZID=America/Sao_Paulo:20260729T204000
+RRULE:FREQ=WEEKLY;BYDAY=WE;UNTIL=20261212T025959Z
+EXDATE;TZID=America/Sao_Paulo:20260923T190000
+SUMMARY:Métodos Numéricos Computacionais [LAB 01 - Bloco A]
+LOCATION:LAB 01 - Bloco A
+DESCRIPTION:Professor: Sergio Luiz Marques Filho
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A aula começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:poea-qua-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260729T210000
+DTEND;TZID=America/Sao_Paulo:20260729T224000
+RRULE:FREQ=WEEKLY;BYDAY=WE;UNTIL=20261212T025959Z
+EXDATE;TZID=America/Sao_Paulo:20260923T210000,20260930T210000,20261118T210000,20261125T210000,20261202T210000,20261209T210000
+SUMMARY:Programação Estruturada [LAB 11 - Bloco A]
+LOCATION:LAB 11 - Bloco A
+DESCRIPTION:Professor: Luiz Adolpho Baroni
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A aula começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pomc-qui-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260730T190000
+DTEND;TZID=America/Sao_Paulo:20260730T204000
+RRULE:FREQ=WEEKLY;BYDAY=TH;UNTIL=20261212T025959Z
+EXDATE;TZID=America/Sao_Paulo:20260820T190000,20260827T190000,20260903T190000,20260910T190000
+SUMMARY:PI: Matemática Computacional [LAB 203 - Bloco B]
+LOCATION:LAB 203 - Bloco B
+DESCRIPTION:Professora: Daniele Cristina Thoaldo
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A aula começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cisd-qui-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260730T210000
+DTEND;TZID=America/Sao_Paulo:20260730T224000
+RRULE:FREQ=WEEKLY;BYDAY=TH;UNTIL=20261212T025959Z
+EXDATE;TZID=America/Sao_Paulo:20260924T210000
+SUMMARY:Circuitos e Sistemas Digitais [LAB 11 - Bloco A]
+LOCATION:LAB 11 - Bloco A
+DESCRIPTION:Professor: Juliano de Pellegrin
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A aula começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aorc-sex-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260731T190000
+DTEND;TZID=America/Sao_Paulo:20260731T204000
+RRULE:FREQ=WEEKLY;BYDAY=FR;UNTIL=20261212T025959Z
+EXDATE;TZID=America/Sao_Paulo:20261120T190000
+SUMMARY:Arquitetura e Organização de Computadores [LAB 10 - Bloco A]
+LOCATION:LAB 10 - Bloco A
+DESCRIPTION:Professor: Sergio Luiz Marques Filho
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A aula começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ead-estudos-1bim-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;VALUE=DATE:20260727
+DTEND;VALUE=DATE:20260917
+SUMMARY:EAD — Estudos dirigidos online (1º bimestre)
+DESCRIPTION:Período oficial: abre em 27/07 e fecha em 16/09.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ead-agendamento-1bim-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;VALUE=DATE:20260826
+DTEND;VALUE=DATE:20260917
+SUMMARY:EAD — Agendamento de provas (1º bimestre)
+DESCRIPTION:Período oficial: abre em 26/08 e fecha em 16/09.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:avaliacao-presencial-1bim-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260927
+SUMMARY:Avaliações presenciais — 1º bimestre
+DESCRIPTION:Janela oficial de avaliações presenciais: 14 a 26/09.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ead-provas-1bim-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260927
+SUMMARY:EAD — Provas presenciais (1º bimestre)
+DESCRIPTION:Janela oficial de provas presenciais EAD: 21 a 26/09.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ead-estudos-2bim-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20261119
+SUMMARY:EAD — Estudos dirigidos online (2º bimestre)
+DESCRIPTION:Período oficial: abre em 28/09 e fecha em 18/11.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ead-agendamento-2bim-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261119
+SUMMARY:EAD — Agendamento de provas (2º bimestre)
+DESCRIPTION:Período oficial: abre em 28/10 e fecha em 18/11.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:avaliacao-presencial-2bim-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261129
+SUMMARY:Avaliações presenciais — 2º bimestre
+DESCRIPTION:Janela oficial de avaliações presenciais: 23 a 28/11.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ead-provas-2bim-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261129
+SUMMARY:EAD — Provas presenciais (2º bimestre)
+DESCRIPTION:Janela oficial de provas presenciais EAD: 23 a 28/11.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:segunda-chamada-presencial-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261206
+SUMMARY:Avaliações presenciais — 2ª chamada
+DESCRIPTION:Janela oficial da segunda chamada presencial: 30/11 a 05/12.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:segunda-chamada-ead-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261206
+SUMMARY:EAD — Provas presenciais de 2ª chamada
+DESCRIPTION:Janela oficial da segunda chamada EAD: 02 a 05/12.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:exame-final-presencial-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261213
+SUMMARY:Avaliações presenciais — Exame final
+DESCRIPTION:Janela oficial dos exames finais presenciais: 07 a 12/12.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:exame-final-ead-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261213
+SUMMARY:EAD — Exame final presencial
+DESCRIPTION:Janela oficial do exame final EAD: 09 a 12/12.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:termino-aulas-2026@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Término das aulas — 2º semestre
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cisd-ed-prova-1-20260924@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260924T210000
+DTEND;TZID=America/Sao_Paulo:20260924T224000
+SUMMARY:ED I + Prova I — Circuitos e Sistemas Digitais [LAB 11 - Bloco A]
+LOCATION:LAB 11 - Bloco A
+DESCRIPTION:Circuitos e Sistemas Digitais.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:ED I e Prova I de Circuitos e Sistemas Digitais começam em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:menc-ed-ponte-20260923@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260923T190000
+DTEND;TZID=America/Sao_Paulo:20260923T204000
+SUMMARY:ED I + Trabalho Ponte — Métodos Numéricos Computacionais [LAB 01 - Bloco A]
+LOCATION:LAB 01 - Bloco A
+DESCRIPTION:Métodos Numéricos Computacionais.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:As atividades de Métodos Numéricos Computacionais começam em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:poea-prova-1-20260923@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260923T210000
+DTEND;TZID=America/Sao_Paulo:20260923T224000
+SUMMARY:Prova do 1º bimestre — Programação Estruturada [LAB 10 - Bloco A]
+LOCATION:LAB 10 - Bloco A
+DESCRIPTION:Programação Estruturada.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A prova de Programação Estruturada começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:poea-ed1-20260929@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260929T190000
+DTEND;TZID=America/Sao_Paulo:20260929T204000
+SUMMARY:Apresentações do 1º ED — Programação Estruturada [LAB 10 - Bloco A]
+LOCATION:LAB 10 - Bloco A
+DESCRIPTION:Primeiro dia de apresentações do 1º ED de Programação Estruturada.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A apresentação de Programação Estruturada começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:poea-ed1-20260930@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260930T210000
+DTEND;TZID=America/Sao_Paulo:20260930T224000
+SUMMARY:Apresentações do 1º ED — Programação Estruturada [LAB 10 - Bloco A]
+LOCATION:LAB 10 - Bloco A
+DESCRIPTION:Segundo dia de apresentações do 1º ED de Programação Estruturada.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A apresentação de Programação Estruturada começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:poea-online-20260908@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260908T190000
+DTEND;TZID=America/Sao_Paulo:20260908T204000
+SUMMARY:Sem aula presencial por feriado — Programação Estruturada [Microsoft Teams]
+LOCATION:Microsoft Teams
+DESCRIPTION:Feriado/sem aula presencial. Conteúdo online via Teams.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:O conteúdo online de Programação Estruturada começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:poea-online-20261013@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20261013T190000
+DTEND;TZID=America/Sao_Paulo:20261013T204000
+SUMMARY:Sem aula presencial por feriado — Programação Estruturada [Microsoft Teams]
+LOCATION:Microsoft Teams
+DESCRIPTION:Feriado/sem aula presencial. Conteúdo online via Teams.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:O conteúdo online de Programação Estruturada começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:poea-ed2-20261117@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20261117T190000
+DTEND;TZID=America/Sao_Paulo:20261117T204000
+SUMMARY:Apresentações do 2º ED — Programação Estruturada [LAB 10 - Bloco A]
+LOCATION:LAB 10 - Bloco A
+DESCRIPTION:Primeiro dia de apresentações do 2º ED de Programação Estruturada.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A apresentação de Programação Estruturada começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:poea-ed2-20261118@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20261118T210000
+DTEND;TZID=America/Sao_Paulo:20261118T224000
+SUMMARY:Apresentações do 2º ED — Programação Estruturada [LAB 10 - Bloco A]
+LOCATION:LAB 10 - Bloco A
+DESCRIPTION:Segundo dia de apresentações do 2º ED de Programação Estruturada.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A apresentação de Programação Estruturada começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:poea-prova-2-20261125@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20261125T210000
+DTEND;TZID=America/Sao_Paulo:20261125T224000
+SUMMARY:Prova do 2º bimestre — Programação Estruturada [LAB 10 - Bloco A]
+LOCATION:LAB 10 - Bloco A
+DESCRIPTION:Programação Estruturada. A data 25/11/2026 cai em uma quarta-feira.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A prova de Programação Estruturada começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:poea-segunda-chamada-20261201@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20261201T190000
+DTEND;TZID=America/Sao_Paulo:20261201T204000
+SUMMARY:Prova de 2ª chamada — Programação Estruturada [LAB 10 - Bloco A]
+LOCATION:LAB 10 - Bloco A
+DESCRIPTION:Primeiro dia de provas de segunda chamada de Programação Estruturada.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A segunda chamada de Programação Estruturada começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:poea-segunda-chamada-20261202@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20261202T210000
+DTEND;TZID=America/Sao_Paulo:20261202T224000
+SUMMARY:Prova de 2ª chamada — Programação Estruturada [LAB 10 - Bloco A]
+LOCATION:LAB 10 - Bloco A
+DESCRIPTION:Segundo dia de provas de segunda chamada de Programação Estruturada.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A segunda chamada de Programação Estruturada começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:poea-final-20261208@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20261208T190000
+DTEND;TZID=America/Sao_Paulo:20261208T204000
+SUMMARY:Prova final — Programação Estruturada [LAB 10 - Bloco A]
+LOCATION:LAB 10 - Bloco A
+DESCRIPTION:Prova final de Programação Estruturada.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A prova final de Programação Estruturada começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:poea-vista-final-20261209@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20261209T210000
+DTEND;TZID=America/Sao_Paulo:20261209T224000
+SUMMARY:Vista final — Programação Estruturada [LAB 10 - Bloco A]
+LOCATION:LAB 10 - Bloco A
+DESCRIPTION:Vista final de Programação Estruturada.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A vista final de Programação Estruturada começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pomc-atividade-g1-20260820@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260820T190000
+DTEND;TZID=America/Sao_Paulo:20260820T204000
+SUMMARY:Atividade avaliativa — Grupo 1 — PI: Matemática Computacional [LAB 203 - Bloco B]
+LOCATION:LAB 203 - Bloco B
+DESCRIPTION:PI: Matemática Computacional — atividade avaliativa do grupo 1.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A atividade avaliativa de PI: Matemática Computacional começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pomc-atividade-g248-20260827@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260827T190000
+DTEND;TZID=America/Sao_Paulo:20260827T204000
+SUMMARY:Atividade avaliativa — Grupos 2, 4 e 8 — PI: Matemática Computacional [LAB 203 - Bloco B]
+LOCATION:LAB 203 - Bloco B
+DESCRIPTION:PI: Matemática Computacional — atividade avaliativa dos grupos 2, 4 e 8.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A atividade avaliativa de PI: Matemática Computacional começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pomc-atividade-g367-20260903@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260903T190000
+DTEND;TZID=America/Sao_Paulo:20260903T204000
+SUMMARY:Atividade avaliativa — Grupos 3, 6 e 7 — PI: Matemática Computacional [LAB 203 - Bloco B]
+LOCATION:LAB 203 - Bloco B
+DESCRIPTION:PI: Matemática Computacional — atividade avaliativa dos grupos 3, 6 e 7.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A atividade avaliativa de PI: Matemática Computacional começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pomc-atividade-g95-20260910@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260910T190000
+DTEND;TZID=America/Sao_Paulo:20260910T204000
+SUMMARY:Atividade avaliativa — Grupos 9 e 5 — PI: Matemática Computacional [LAB 203 - Bloco B]
+LOCATION:LAB 203 - Bloco B
+DESCRIPTION:PI: Matemática Computacional — atividade avaliativa dos grupos 9 e 5.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:A atividade avaliativa de PI: Matemática Computacional começa em 1 hora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nivelamento-parte1-20260831@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
+SUMMARY:Trabalho proposto — Parte 1/2 — Nivelamento [LOCAL NÃO INFORMADO]
+DESCRIPTION:Nivelamento em Matemática Básica. Horário e local não informados no TickTick.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:nivelamento-parte2-20261103@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Trabalho proposto — Parte 2/2 — Nivelamento [LOCAL NÃO INFORMADO]
+DESCRIPTION:Nivelamento em Matemática Básica. Horário e local não informados no TickTick.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:feriado-aorc-20260907@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260907T190000
+DTEND;TZID=America/Sao_Paulo:20260907T204000
+SUMMARY:Sem aula por feriado — Arquitetura e Organização de Computadores [LAB 10 - Bloco A]
+LOCATION:LAB 10 - Bloco A
+DESCRIPTION:Não haverá aula devido ao feriado da Independência do Brasil.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Arquitetura e Organização de Computadores não terá aula hoje
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:feriado-cisd-20260907@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260907T210000
+DTEND;TZID=America/Sao_Paulo:20260907T224000
+SUMMARY:Sem aula por feriado — Circuitos e Sistemas Digitais [LAB 11 - Bloco A]
+LOCATION:LAB 11 - Bloco A
+DESCRIPTION:Não haverá aula devido ao feriado da Independência do Brasil.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Circuitos e Sistemas Digitais não terá aula hoje
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:feriado-menc-20260908@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20260908T210000
+DTEND;TZID=America/Sao_Paulo:20260908T224000
+SUMMARY:Sem aula por feriado — Métodos Numéricos Computacionais [LAB 01 - Bloco A]
+LOCATION:LAB 01 - Bloco A
+DESCRIPTION:Não haverá aula devido ao feriado de Nossa Senhora da Luz.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Métodos Numéricos Computacionais não terá aula hoje
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:feriado-aorc-20261012@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20261012T190000
+DTEND;TZID=America/Sao_Paulo:20261012T204000
+SUMMARY:Sem aula por feriado — Arquitetura e Organização de Computadores [LAB 10 - Bloco A]
+LOCATION:LAB 10 - Bloco A
+DESCRIPTION:Não haverá aula devido ao feriado de Nossa Senhora Aparecida.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Arquitetura e Organização de Computadores não terá aula hoje
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:feriado-cisd-20261012@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20261012T210000
+DTEND;TZID=America/Sao_Paulo:20261012T224000
+SUMMARY:Sem aula por feriado — Circuitos e Sistemas Digitais [LAB 11 - Bloco A]
+LOCATION:LAB 11 - Bloco A
+DESCRIPTION:Não haverá aula devido ao feriado de Nossa Senhora Aparecida.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Circuitos e Sistemas Digitais não terá aula hoje
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:feriado-menc-20261013@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20261013T210000
+DTEND;TZID=America/Sao_Paulo:20261013T224000
+SUMMARY:Sem aula por antecipação do Dia do Professor — Métodos Numéricos Computacionais [LAB 01 - Bloco A]
+LOCATION:LAB 01 - Bloco A
+DESCRIPTION:Não haverá aula devido à antecipação do Dia do Professor/Profissional Escolar.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Métodos Numéricos Computacionais não terá aula hoje
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:feriado-aorc-20261102@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20261102T190000
+DTEND;TZID=America/Sao_Paulo:20261102T204000
+SUMMARY:Sem aula por feriado — Arquitetura e Organização de Computadores [LAB 10 - Bloco A]
+LOCATION:LAB 10 - Bloco A
+DESCRIPTION:Não haverá aula devido ao feriado de Finados.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Arquitetura e Organização de Computadores não terá aula hoje
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:feriado-cisd-20261102@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20261102T210000
+DTEND;TZID=America/Sao_Paulo:20261102T224000
+SUMMARY:Sem aula por feriado — Circuitos e Sistemas Digitais [LAB 11 - Bloco A]
+LOCATION:LAB 11 - Bloco A
+DESCRIPTION:Não haverá aula devido ao feriado de Finados.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Circuitos e Sistemas Digitais não terá aula hoje
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:feriado-aorc-20261120@openclasshub.local
+DTSTAMP:20260816T120000Z
+DTSTART;TZID=America/Sao_Paulo:20261120T190000
+DTEND;TZID=America/Sao_Paulo:20261120T204000
+SUMMARY:Sem aula por feriado — Arquitetura e Organização de Computadores [LAB 10 - Bloco A]
+LOCATION:LAB 10 - Bloco A
+DESCRIPTION:Não haverá aula devido ao feriado do Dia da Consciência Negra.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Arquitetura e Organização de Computadores não terá aula hoje
+END:VALARM
+END:VEVENT
+END:VCALENDAR
