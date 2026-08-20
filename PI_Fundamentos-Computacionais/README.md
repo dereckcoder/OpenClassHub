@@ -1,0 +1,4 @@
+# DIVISÃO DO TRABALHO 
+
+
+
