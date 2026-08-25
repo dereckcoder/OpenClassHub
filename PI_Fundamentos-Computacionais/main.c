@@ -24,7 +24,7 @@ Essa frota é composta por 5 navios:
     1 submarino: ocupa 3 espaços
     1 destroier: ocupa 2 espaços
 
-Uma vez posicionado, não pode mudar. Não pode sobrepor outro navio, pode ou não ter um espaço entre um navio e outro (opcional)
+Uma vez posicionado, não pode mudar. Não pode sobrepor outro navio, pode ou não ter um espaço entre um navio e outro
 */
 
 #include <stdio.h>
@@ -44,18 +44,43 @@ struct Navio {
     int y; /* numero */
 };
 
+struct Coordenada {
+    int x;
+    int y;
+};
+
+
+// Verifica se coordenada está no padrao LetraNumero
+bool validar_coordenada(char *coordenadas) {
+    // Expressão regular para verificar se o usuário digitou coordenadas válidas
+    char *padrao_coordenada = "^[A-J]([1-9]|10)$";
+    regex_t regex;
+    regcomp(&regex, padrao_coordenada, REG_EXTENDED | REG_ICASE);
+
+    if(regexec(&regex, coordenadas, 0, NULL, 0) == REG_NOMATCH) {
+        regfree(&regex);
+        return false;
+    } else {
+        regfree(&regex);
+        return true;
+    }
+
+}
+
 // Cria a grade com letras, numeros e #
-void criar_grade(int linha, int coluna) {
+void criar_grade(int x, int y, struct Coordenada grade[x][y]) {
     printf("     ");
-    for(int i = 0; i < coluna; i++) {
+    for(int i = 0; i < x; i++) {
         printf("%c ", 65 + i);
     }
     
     printf("\n");
-    for (int i = 0; i < linha; i++){
+    for (int i = 0; i < y; i++){
         printf("%02d - ", i + 1);
-        for (int j = 0; j < coluna; j++) {
-            printf("# ");
+        for (int j = 0; j < x; j++) {
+            printf("~ ");
+            grade[i][j].x = j + 1;
+            grade[i][j].y = i + 1;
         }
         printf("\n");
     }
@@ -73,6 +98,78 @@ void tratar_coordenadas(char *coordenada, struct Navio *navio) {
     }
 }
 
+// Função para receber 
+void receber_direcao_e_coordenadas_dos_navios(struct Navio navio[], char *jogador) {
+
+    printf("\n%s posicione os seus navios\n\n", jogador);
+    printf("Navio\t\tQtd\n");
+
+    // Imprime a frota do jogador
+    for(int i = 0; i < 5; i++) {
+        printf("%s\t%d\n", navio[i].nome, navio[i].qtd);
+    }
+
+    printf("\n");
+
+    // Loop para receber a direção e coordenadas de cada navio
+    for(int i = 0; i < 5; i++) {
+
+        // Recebe direção e valida se está correta
+        do {
+            printf("Direção do(a) %s (0 = Horizontal, 1 = Vertical): ", navio[i].nome);
+            scanf("%d", &navio[i].direcao);
+            int c;
+            while ((c = getchar()) != '\n' && c != EOF);
+
+            if(navio[i].direcao > 1 || navio[i].direcao < 0)
+            {
+                printf("***Direção incorreta. Informe 0 ou 1***\n");
+            }
+
+        } while (navio[i].direcao > 1 || navio[i].direcao < 0);    
+        
+        char coordenadas[5] = "";
+        
+        // Recebe coordenadas e valida se está correta
+        do {
+            printf("Coordenadas do(a) %s (ocupa %d espaços): ", navio[i].nome, navio[i].tamanho);
+            scanf("%s", coordenadas);
+            int c;
+            while ((c = getchar()) != '\n' && c != EOF);                
+
+            bool coordenada_valida = validar_coordenada(coordenadas);
+
+            if(coordenada_valida == false) {
+                printf("***Coordenada invalida. Forneça uma coordenada entre A1 e J10***\n");
+            }
+
+            // printf("Fora:\nx: %d\ny: %d\n", navio[i].x, navio[i]->y);
+
+        } while (validar_coordenada(coordenadas) == false);
+        tratar_coordenadas(coordenadas, &navio[i]);
+        printf("\n\n");
+    }
+}
+
+void limpar_tela() {
+    printf("\e[1J\e[H"); 
+}
+
+//TO-DO: Função para validar se é possivel posicionar o navio na coordenada escolhida (se está dentro da grade ou se está encima de outro navio)
+
+
+//TO-DO: Função para disparar os tiros
+
+
+//TO-DO: Função para verificar se acertou ou não um navio ou se o jogador tentou atirar em algum lugar onde já existe um tiro
+
+
+//TO-DO: Função para atualizar a grade para posicionar os navios e tiros
+
+
+//TO-DO: Função para definir o ganhador
+
+
 int main(int argc, char *argv[]) {
 
 
@@ -81,6 +178,11 @@ int main(int argc, char *argv[]) {
         printf("Informe o nome dos jogadores\nUso: ./main.c Jogador1 Jogador2\n");
         return 1;
     }
+
+    int tamanho_grade = 10;
+
+    char *j1 = argv[1];
+    char *j2 = argv[2];
 
     // Frota jogador 1
     struct Navio frota_j1[5] = {
@@ -100,57 +202,16 @@ int main(int argc, char *argv[]) {
         {"Destróier", 2, 1, 0, 0, 0}
     };
 
-    // Cria a grade inicial
-    criar_grade(10, 10);
+    // Inicializa frota do jogador 1
+    struct Coordenada grade_j1[tamanho_grade][tamanho_grade];
+    criar_grade(tamanho_grade, tamanho_grade, grade_j1);
+    receber_direcao_e_coordenadas_dos_navios(frota_j1, j1);
+    
+    limpar_tela();
 
-    printf("\n");
-    printf("%s posicione os seus navios\n\n", argv[1]);
-    printf("Navio\t\tQtd\n");
+    // Inicializa frota do jogador 2
+    struct Coordenada grade_j2[tamanho_grade][tamanho_grade];
+    criar_grade(tamanho_grade, tamanho_grade, grade_j2);
+    receber_direcao_e_coordenadas_dos_navios(frota_j2, j2);
 
-    // Imprime a frota do jogador 1
-    for(int i = 0; i < 5; i++) {
-        printf("%s\t%d\n", frota_j1[i].nome, frota_j1[i].qtd);
-    }
-
-    printf("\n");
-
-    // Expressão regular para verificar se o usuário digitou coordenadas válidas
-    char *padrao_coordenada = "^[A-J]([1-9]|10)$";
-    regex_t regex;
-    regcomp(&regex, padrao_coordenada, REG_EXTENDED | REG_ICASE);
-
-    // Loop para receber a direção e coordenadas de cada navio
-    for(int i = 0; i < 5; i++) {
-
-        // Recebe direção e valida se está correta
-        do {
-            printf("Direção do(a) %s (0 = Horizontal, 1 = Vertical): ", frota_j1[i].nome);
-            scanf("%d", &frota_j1[i].direcao);
-            while (getchar() != '\n' && getchar() != EOF);
-
-            if(frota_j1[i].direcao > 1 || frota_j1[i].direcao < 0)
-            {
-                printf("***Direção incorreta. Informe 0 ou 1***\n");
-            }
-
-        } while (frota_j1[i].direcao > 1 || frota_j1[i].direcao < 0);    
-        
-        char coordenadas[5] = "";
-        
-        // Recebe coordenadas e valida se está correta
-        do {
-            printf("Coordenadas do(a) %s (ocupa %d espaços): ", frota_j1[i].nome, frota_j1[i].tamanho);
-            scanf("%s", coordenadas);
-            while (getchar() != '\n' && getchar() != EOF);
-            
-            if(regexec(&regex, coordenadas, 0, NULL, 0) == REG_NOMATCH) {
-                printf("***Coordenada invalida. Forneça uma coordenada entre A1 e J10***\n");
-            }
-
-            // printf("Fora:\nx: %d\ny: %d\n", frota_j1[i].x, frota_j1[i].y);
-
-        } while (regexec(&regex, coordenadas, 0, NULL, 0) == REG_NOMATCH);
-        tratar_coordenadas(coordenadas, &frota_j1[i]);
-        printf("\n\n");
-    }
-}
+}  
