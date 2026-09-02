@@ -1,3 +1,5 @@
+/*Exercício_02:Implemente um programa que imprima ao contrário um vetor preenchido*/
+
 #include <stdio.h>
 
 int main(){
@@ -9,7 +11,7 @@ int main(){
     }
     printf("imprima na tela\n");
     
-    for (int i = 0; i < 5; i++){
+    for (int i = 5; i >= 0; i--){
         printf("%d\n",num[i]);
     }
 

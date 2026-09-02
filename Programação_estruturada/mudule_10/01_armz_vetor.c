@@ -1,3 +1,5 @@
+/*Exercício_01:Implemente um programa que receba valores do usuário e os armazene em um vetor*/
+
 #include <stdio.h>
 
 int main(){
@@ -9,7 +11,7 @@ int main(){
     }
     printf("imprima na tela\n");
     
-    for (int i = 5; i >= 0; i--){
+    for (int i = 0; i < 5; i++){
         printf("%d\n",num[i]);
     }
 
