@@ -94,7 +94,7 @@ void criar_grade(int x, int y, struct Coordenada grade[x][y]) {
 }
 
 void imprimir_grade(int tamanho_grade, struct Coordenada grade[tamanho_grade][tamanho_grade]) {
-    printf("     ");
+    printf("   ");
     for(int i = 0; i < tamanho_grade; i++) {
         printf("%c ", 65 + i);
     }
@@ -102,7 +102,7 @@ void imprimir_grade(int tamanho_grade, struct Coordenada grade[tamanho_grade][ta
     printf("\n");
 
     for (int i = 0; i < tamanho_grade; i++){
-        printf("%02d - ", i + 1);
+        printf("%02d ", i + 1);
         for (int j = 0; j < tamanho_grade; j++) {
             switch (grade[i][j].estado)
             {
@@ -113,8 +113,15 @@ void imprimir_grade(int tamanho_grade, struct Coordenada grade[tamanho_grade][ta
             case NAVIO:
                 printf("@ ");
                 break;
+                
+            case TIRO_AGUA:
+                printf("* ");
+                break;
 
-            
+            case TIRO_NAVIO:
+                printf("X ");
+                break;
+
             default:
                 break;
             }
@@ -187,7 +194,7 @@ void posicionar_navio(int tamanho_grade, struct Coordenada grade[tamanho_grade][
 void receber_direcao_e_coordenadas(struct Navio navio[], int tamanho_grade, char *jogador, struct Coordenada grade[tamanho_grade][tamanho_grade]) {
 
     // Loop para receber a direção e coordenadas de cada navio
-    for(int i = 0; i < 5; i++) {
+    for(int i = 0; i < 1; i++) {
         
         printf("%s posicione os seus navios\n\n", jogador);
 
@@ -240,6 +247,15 @@ void receber_direcao_e_coordenadas(struct Navio navio[], int tamanho_grade, char
 }
 
 //TO-DO: Função para disparar os tiros
+void atirar(int tamanho_grade, struct Coordenada grade[tamanho_grade][tamanho_grade], int x, int y) {
+
+    if(grade[y][x].estado == AGUA) {
+        grade[y][x].estado = TIRO_AGUA;
+    } 
+    else if (grade[y][x].estado == NAVIO) {
+        grade[y][x].estado = TIRO_NAVIO;
+    }
+}
 
 
 //TO-DO: Função para verificar se acertou ou não um navio ou se o jogador tentou atirar em algum lugar onde já existe um tiro
@@ -251,11 +267,11 @@ void receber_direcao_e_coordenadas(struct Navio navio[], int tamanho_grade, char
 
 int main(int argc, char *argv[]) {
 
-    // Verificar se o nome dos jogadores foi informado
-    if(argc < 3) {
-        printf("Informe o nome dos jogadores\nUso: ./main.c Jogador1 Jogador2\n");
-        return 1;
-    }
+    // // Verificar se o nome dos jogadores foi informado
+    // if(argc < 3) {
+    //     printf("Informe o nome dos jogadores\nUso: ./main.c Jogador1 Jogador2\n");
+    //     return 1;
+    // }
 
     limpar_tela();
 
@@ -294,7 +310,7 @@ int main(int argc, char *argv[]) {
 
     limpar_tela();
 
-    // // Inicializa frota do jogador 2
+    // Inicializa frota do jogador 2
     struct Coordenada grade_j2[tamanho_grade][tamanho_grade];
     criar_grade(tamanho_grade, tamanho_grade, grade_j2);
     receber_direcao_e_coordenadas(
@@ -304,4 +320,12 @@ int main(int argc, char *argv[]) {
         grade_j2
     );
 
+    //Inicio do jogo
+    int x = 1;
+    int y = 1;
+
+    atirar(tamanho_grade, grade_j1, 0, 0);
+
+    imprimir_grade(tamanho_grade, grade_j1);
+    
 }  
